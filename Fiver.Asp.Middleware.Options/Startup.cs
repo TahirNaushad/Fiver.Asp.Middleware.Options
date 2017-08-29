@@ -20,7 +20,7 @@ namespace Fiver.Asp.Middleware.Options
         {
             services.AddMessageFormatter(options =>
             {
-                options.Format = MessageFormat.Upper;
+                options.Format = MessageFormat.Lower;
             });
         }
 
@@ -41,8 +41,8 @@ namespace Fiver.Asp.Middleware.Options
         {
             app.UseGreeting(options =>
             {
-                options.GreetAt = "Evening";
-                options.GreetTo = "Naushad";
+                options.GreetAt = "Morning";
+                options.GreetTo = "Tahir";
             });
         }
     }
